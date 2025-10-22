@@ -63,11 +63,13 @@ body {
     gap: 10px;
 }
 
-.tasks > .task-list {
+.tasks > .tasks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding-left: 0;
+    gap: 10px;  /* jarak antar item */
 }
 
 .task-list > .tasks-list-item {
@@ -78,8 +80,8 @@ body {
 .tasks-list-item > .task {
     padding: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
     border: 1px solid #ccc;
@@ -92,4 +94,8 @@ body {
 
 .tasks-list-item.checked {
     background-color: chartreuse;
+}
+
+.task button {
+    margin-left: auto; /* Dorong tombol ke paling kanan */
 }
