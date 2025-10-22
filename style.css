@@ -69,7 +69,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;  /* jarak antar item */
+    gap: 10px;  
 }
 
 .task-list > .tasks-list-item {
@@ -84,7 +84,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #383636;
 }
 
 .tasks-list-item >.tasks > .task-title {
@@ -93,9 +93,9 @@ body {
 }
 
 .tasks-list-item.checked {
-    background-color: chartreuse;
+    background-color: rgb(176, 231, 169);
 }
 
 .task button {
-    margin-left: auto; /* Dorong tombol ke paling kanan */
+    margin-left: auto; 
 }
